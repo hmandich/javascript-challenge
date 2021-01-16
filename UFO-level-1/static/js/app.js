@@ -50,7 +50,7 @@ button.on("click", () => {
 })
 
 //create reset button
-resetbtn.on("click", () => {
+button2.on("click", () => {
     d3.event.preventDefault();
     tbody.html("");
     populatedata(data)

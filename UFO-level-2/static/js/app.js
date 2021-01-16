@@ -42,7 +42,7 @@ button.on("click", () => {
     var filterstate = tableData.filter(tableData => tableData.state === inputstate);
     var filtercountry = tableData.filter(tableData => tableData.country === inputcountry);
     var filtershape = tableData.filter(tableData => tableData.shape === inputshape);
-    var filterData = tableData.filter(tableData => tableData.datetime === inputDate && tableData.city === inputcity && tableData.state === inputsate && tableData.county === inputcountry && tableData.shape === inputshape)
+    var filterData = tableData.filter(tableData => tableData.datetime === inputDate && tableData.city === inputcity && tableData.state === inputsate && tableData.county === inputcountry && tableData.shape === inputshape);
 
 // add date filter to table
     tbody.html("");
@@ -65,7 +65,7 @@ button.on("click", () => {
         }
 })
 //create reset button
-resetbtn.on("click", () => {
+button2.on("click", () => {
     d3.event.preventDefault();
     tbody.html("");
     populatedata(data)
