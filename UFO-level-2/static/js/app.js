@@ -48,7 +48,7 @@ button.on("click", () => {
     tbody.html("");
 
     let response = {
-        filterData, filterDate, filtercity, filterstate, filtercountry, filtershape
+        filterDate, filtercity, filterstate, filtercountry, filtershape, filterData
     }
 
     if(response.filterData.length !== 0) {
@@ -58,7 +58,6 @@ button.on("click", () => {
     else if (response.filterData.length === 0 && ((response.filterDate.length !== 0 || response.filtercity.length !== 0 || response.filterstate.length !== 0 || response.filtercountry.length !== 0 || response.filtershape.length !== 0))){
         populatedata(filterDate) || populatedata(filtercity) || populatedata(filterstate) || populatedata(filtercountry) || populatedata(filtershape);
     }
-    // Top if only works for filtering the dates
     
         else {
             tbody.append("tr").append("td").text("No Sightings on date selected - try again");
