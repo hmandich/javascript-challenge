@@ -41,8 +41,6 @@ button.on("click", () => {
     if(response.filterDate.length !== 0) {
         populatedata(filterDate);
     }
-
-    // Top if only works for filtering the date
     
         else {
             tbody.append("tr").append("td").text("No Sightings on date selected - try again");
